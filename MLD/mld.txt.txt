@@ -1,0 +1,23 @@
+Modèle Logique des Données (MLD) :
+
+Tables :
+Table "RendezVous" :
+id (clé primaire)
+date
+heure
+lieu
+patient_id (clé étrangère référençant la table "Patient")
+
+Table "Patient" :
+id (clé primaire)
+nom
+prénom
+adresse
+
+Table "Prestation" :
+id (clé primaire)
+rendezvous_id (clé étrangère référençant la table "RendezVous")
+
+Table "Consultation" :
+id (clé primaire)
+rendezvous_id (clé étrangère référençant la table "RendezVous")
